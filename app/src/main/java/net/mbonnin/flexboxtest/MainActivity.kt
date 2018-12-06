@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // create a recyclerView but do not attach it to the window
         val recyclerView = RecyclerView(this)
         recyclerView.layoutManager =  FlexboxLayoutManager(this)
         recyclerView.adapter = object: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
